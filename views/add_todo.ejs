@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <style type="text/css"> 
+.well{
+  background-color:lightgreen;
+}
+body{
+  background-color: green;
+}
+  </style>
+  <body>
+ 
+  <div class="container">
+    <div class="well">
+      <h1>HERE TO ADD YOUR TODO</h1>
+    <h1>Welcome to MY TODO list</h1>
+  <form action="/create/todo" method="POST" class="in-line">
+    <p class="in-line"><b>title:<input type="text" name="todo_title" class="in-line" />
+    <label class="in-line">description:</label><textarea name="description"></textarea>
+    <label class="in-line">submit:</label><input type="submit" value="Submit" class="btn btn-primary"/></b></p>
+  </form>
+    </div>
+  </div>
+  </body>
+</html>
